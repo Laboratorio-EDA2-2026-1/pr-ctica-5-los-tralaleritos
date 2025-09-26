@@ -72,12 +72,13 @@ int *countingSort(int param[], int size) {
         free(countArray);
         return NULL;
     }
-
+ // Llenamos el arreglo ordenado en orden inverso para mantener la estabilidad
     for (int i = size - 1; i >= 0; i--) {
         sortedArray[countArray[param[i]] - 1] = param[i];
         countArray[param[i]]--;
     }
     free(countArray);
+    //Retornamos el array sorteado
     return sortedArray;
 }
 // Funcion para encontrar el maximo elemento en un arreglo
@@ -92,4 +93,5 @@ int findMax(int arr[], int size) {
         }
     }
     return max;
+
 }
