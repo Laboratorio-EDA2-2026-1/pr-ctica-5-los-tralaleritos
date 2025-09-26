@@ -1,3 +1,5 @@
+//Implementa el algoritmo de búsqueda binaria (recuerda que es un algoritmo recursivo).
+
 #include <stdio.h>
 #include <stdlib.h> 
 
