@@ -16,7 +16,34 @@ int main() {
     int A[] = {5, 7, 0, -1, 45, -5, 23};
     int n = sizeof(A) / sizeof(A[0]);
     int k = -5;
+    
+    //Creamos un arreglo random
+	int arr[] = {1,2,3,4,5, 2 ,6,7,8};
 
+	int busq = 2;
+	int i = 0;
+
+	//Busqueda lineal Normal
+	printf("Implementacion de la busqueda lineal: \n");
+	for(i = 0; i < sizeof(arr); i++){
+		if(arr[i] == busq){
+			printf("Se encontro en la posicion [%d] el numero: %d\n", i, arr[i]);
+		}
+
+		if(i == 8){
+			break;
+		}
+	}
+
+	//Busqueda lineral mejorada
+	printf("Implementacion de la busqueda lineal mejorada: \n");
+	for(i = 0; i < sizeof(arr); i++){
+		if(arr[i] == busq){
+			printf("Se encontro en la posicion [%d] el numero: %d\n", i, arr[i]);
+			break;
+		}
+	}
+    
     printf("Arreglo en el que se buscará el elemento:\n");
     for (int i = 0; i < n; i++) {
        printf("%d ", A[i]);
